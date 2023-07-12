@@ -1,0 +1,31 @@
+.addNewNodeButton,
+.addNewFrameNodeButton {
+    z-index: 4;
+    position: absolute;
+    border: none;
+    height: 40px;
+    padding: 0 15px;
+    background: rgba(217, 217, 217, 0.1);
+    color: rgba(255,255,255, 0.75);
+    outline: none;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 11px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: fit-content;
+}
+
+.addNewFrameNodeButton {
+    top: 80px;
+}
+
+.boardPanel {
+    height: 100vh;
+    width: 100px;
+    background: #1A1A1A;
+    margin: 0;
+    padding: 15px;
+}

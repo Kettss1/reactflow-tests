@@ -1,0 +1,75 @@
+.taskListStepContainer,
+.stepDescription {
+    width: 100%;
+    display: flex;
+}
+
+.stepDescription {
+    margin-right: 25px;
+}
+
+.taskListStepContainer {
+    padding: 5px;
+}
+
+.focused {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.3);
+    padding-left: 6px;
+}
+
+.disabled {
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255, 0.75);
+    text-overflow: ellipsis;
+    padding-left: 7px;
+}
+
+.checkboxInput {
+    cursor: pointer;
+    background: #3D3D3D;
+    border: 3.32203px solid #8B8B8B;
+    border-radius: 5.81356px;
+    appearance: initial;
+    min-width: 20px;
+    min-height: 20px;
+    display: grid;
+    place-content: center;
+    margin-right: 8px;
+
+    &::before {
+        content: "";
+        width: 0.65em;
+        height: 0.65em;
+        opacity: 0;
+        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        transition: 120ms opacity ease-in-out;
+        background-color: white;
+    }
+    
+    &:checked {
+        background: #4773EA;
+        border: 3.32203px solid #365BBB;
+    }
+
+    &:checked::before {
+        opacity: 1;
+    }
+}
+
+.textCheckbox {
+    width: 100%;
+    outline: none;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 11px;
+}
+
+.deleteStep {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
